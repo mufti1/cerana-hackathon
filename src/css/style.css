@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "Exo-Regular";
-    src: url(../fonts/Exo-Regular.otf);
+    font-family: "SourceSansPro-Regular";
+    src: url(../fonts/SourceSansPro-Regular.otf);
     font-weight: 200;
 }
 @font-face {
@@ -127,12 +127,13 @@ h1,h2,h3,h4,h5,h6,p{margin: 0;padding: 0;}
     position: relative;
     bottom: 1350px;
     right: 70px;
+    z-index: -2;
 }
 .text-header{
     position: relative;
 }
 .text-header h1{
-    font-family: 'Exo-Regular';
+    font-family: 'SourceSansPro-Regular';
     letter-spacing: 3.6px;
     font-size: 36px;
 }
@@ -149,40 +150,87 @@ h1,h2,h3,h4,h5,h6,p{margin: 0;padding: 0;}
 
 
 
-/*--------- TERBARU */
-#terbaru{
+/*------ BAGIAN CARD */
+
+.card{
     width: 100%;
-    height: 700px;
-    background-color:#f7f7f7; 
-    padding-top: 60px;
-    padding-bottom: 60px;
+    min-height: 515px;
+    border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
 }
-.lihat-semua{
-    float: right;
+.image-card{
+    background-color: #898989;
+    min-height: 197px;
+    max-height: 197px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
-a.lihat-semua{
+
+.content-card{
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 30px;
+    max-height: 157px;
+    overflow: hidden;
+}
+.content-card h4 > a{
+    font-family: 'SourceSansPro-Regular';
+    font-size: 18px;
+    line-height: 24px;
+    color: #23354d;
+    text-decoration: none;
+}
+.content-card p > a{
+    font-family: 'SourceSansPro-Regular';
+    font-size: 14px;
+    line-height: 24px;
     text-decoration: none;
     color: #959595;
-    padding: 18px 40px 18px 50px;
-    border-radius: 39px;
-    border: 1px solid #959595;
-    font-size: 14px;
-    font-family: "SourceSansPro-Regular",sans-serif;
-    position: relative;
-    margin: -85px 0px 0px 0px;
-        webkit-transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
-    -ms-transition: all 0.35s ease-in-out;
-    transition: all 0.35s ease-in-out;
 }
-a.lihat-semua:hover{
-  background-color: #e5e5e5;
-    webkit-transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
-    -ms-transition: all 0.35s ease-in-out;
-    transition: all 0.35s ease-in-out;}
+.card-footer{
+    position: absolute;
+    bottom: 0;
+}
+.info-card{
+    float: left;
+    margin-top: 60px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+.kanan{float: right;}
+.info-card p{
+    font-family: "SourceSansPro-Regular";
+    font-size: 10px;
+    color: #898989
+}
+
+/* Progress bar */
+.progress-place{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.progress {
+  width: 100%;
+  height: 2px;
+  margin-bottom: 0;
+  box-shadow: none;
+  top: 30px;
+}
+
+.progress-wrap {
+  background: #466a9a;
+  margin:0;
+  overflow: hidden;
+  position: relative;
+}
+.progress-wrap .progress-bar {
+  background: #ddd;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
 /*Marketplace*/
 .card-market{
   margin-top: 30px;

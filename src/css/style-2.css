@@ -16,7 +16,7 @@ body{
 /* WARNA */
 
 .biru{
-	color: #317adc;
+	color: #466a9a;
 }
 .biru-gelap{
 	color: #001b24;
@@ -58,18 +58,22 @@ body{
 	font-size: 30px;
 }
 /* INSTALASI FONT */
-@font-face{
-  font-family: 'SourceSansPro-Regular';
-  font-style: normal;
-  font-weight: 200;
-  src: url("../fonts/SourceSansPro-Regular.ttf");
+@font-face {
+    font-family: "Exo-Regular";
+    src: url(../fonts/Exo-Regular.otf);
+    font-weight: 200;
 }
-@font-face{
-  font-family: 'TitilliumWeb-Regular';
-  font-style: normal;
-  font-weight: 200;
-  src: url("../fonts/TitilliumWeb-Regular.ttf");
+@font-face {
+    font-family: "Exo-Italic";
+    src: url(../fonts/Exo-Italic.otf);
+    font-weight: 200;
 }
+@font-face {
+    font-family: "SourceSansPro-Regular";
+    src: url(../fonts/SourceSansPro-Regular.ttf);
+    font-weight: 200;
+}
+
 #header{
 	background: url("../img/img-header-2.png");
 	background-repeat: no-repeat;
@@ -86,7 +90,7 @@ h1,h2,h3,h4,h5,h6{
 	font-weight: 200;
 }
 p{
-	font-family: 'TitilliumWeb-Regular',Helvetica,sans-serif;
+	font-family: 'SourceSansPro-Regular',Helvetica,sans-serif;
 	margin: 0;
 	padding: 0;
 }
@@ -404,9 +408,7 @@ webkit-transition: all 0.35s ease-in-out;
 .text-header > .garis{
 	background-color: #fff;
 }
-.text-header h1{
-	padding-bottom: 18px;
-}
+
 
 .tombolheader{
 	position: relative;
@@ -426,9 +428,9 @@ webkit-transition: all 0.35s ease-in-out;
 	font-family: "SourceSansPro-Regular",sans-serif;
 	font-size: 16px;
 }
-.tombol-kuning{
-	background-color: #dca431;
-	box-shadow: 0 0 15px 0 rgba(220, 164, 49, 0.5);
+.tombol-biru{
+	background-color: #466a9a;
+	box-shadow: 0 0 15px 0 rgba(70, 106, 154, 0.5);
 	/*box-shadow: 0 0 15px 0 #dca431;*/
   color: #fff;
   font-family: "SourceSansPro-Regular",sans-serif;
@@ -784,10 +786,10 @@ a.lihat-semua:hover{
     padding-left: 25px;
 }
 .campaign-postby p{
-	font-size: 10px;
-	font-family: "TitilliumWeb-Regular",sans-serif;
-	margin-left: 10px;
-	float: left;
+    font-size: 10px;
+    font-family: "SourceSansPro-Regular",sans-serif;
+    margin-left: 20px;
+	
 }
 .campaign-postby img{
 	float: left;
@@ -809,7 +811,7 @@ a.lihat-semua:hover{
 }
 .artikel-postby p{
   font-size: 10px;
-  font-family: "TitilliumWeb-Regular",sans-serif;
+  font-family: "SourceSansPro-Regular",sans-serif;
   margin-left: 10px;
   float: left;
   position: relative;
@@ -828,9 +830,9 @@ a.lihat-semua:hover{
 }
 
 .campaign-action{
-	float: right;
-	padding-right: 25px;
-
+    float: right;
+    /* padding-right: 25px; */
+    margin-left: 40px;
 }
 .campaign-action a.link{
 	float: right;
@@ -965,7 +967,7 @@ a.item-menu:hover + .icon-down,.dropdownkonten:hover + .icon-down{
 	padding-bottom: 60px;
 	padding-top: 60px;
 	width: 100%;
-	background-color: #ffffff;
+	background-color: #fafafa;
 }
 #section-terbaru h4{
 	font-family: "SourceSansPro-Regular",sans-serif;
@@ -1030,7 +1032,7 @@ width: 60px;
   text-align: center;
   padding-top: 15px;
   font-size: 18px;
-  font-family: "TitilliumWeb-Regular",sans-serif;
+  font-family: "SourceSansPro-Regular",sans-serif;
   color: #fff;
   margin: 0 auto;
   z-index: 1;
@@ -1159,10 +1161,10 @@ input:-moz-placeholder { color:#cecece; font-family: "SourceSansPro-Regular",Hel
     padding: 18px 27px 18px 27px;
     font-family: "SourceSansPro-Regular",sans-serif;
     font-size: 16px;
-    background-color: #DCA431;
+    background-color: #466a9a;
     margin-top: 32px;
     color: #FFFFFF;
-    box-shadow: 0 0 15px 0 rgba(220, 164, 49, 0.5);
+    box-shadow: 0 0 15px 0 rgba(70, 106, 154, 0.5);
     webkit-transition: all 0.45s ease-in-out;
     -moz-transition: all 0.45s ease-in-out;
     -o-transition: all 0.45s ease-in-out;
@@ -1280,7 +1282,7 @@ padding-top: 15.2%;
 #section-footer p.judul-menu{color: #959595;font-size: 16px;font-weight: 800;padding-bottom: 40px;}
 #section-footer ul{margin: 0;padding: 0;}
 #section-footer ul li{display: block;}
-#section-footer ul li a{text-decoration: none;font-family: "TitilliumWeb-Regular",sans-serif;font-size: 16px;color: #959595;line-height: 30px;}
+#section-footer ul li a{text-decoration: none;font-family: "SourceSansPro-Regular",sans-serif;font-size: 16px;color: #959595;line-height: 30px;}
 #section-footer ul li a:hover{color: #317adc;}
 .garis-footer{
   min-height: 1px;
@@ -1293,7 +1295,7 @@ padding-top: 15.2%;
 .sosmed-footer{
   color: #959595;
   font-size: 12px;
-  font-family: "TitilliumWeb-Regular",sans-serif;
+  font-family: "SourceSansPro-Regular",sans-serif;
     float: right;
     padding-right: 25px;
     position: relative;
@@ -1358,7 +1360,7 @@ padding-top: 15.2%;
     padding-right: 35px;
     outline: none;
     color: #959595;
-    font-family: "TitilliumWeb-Regular",sans-serif;
+    font-family: "SourceSansPro-Regular",sans-serif;
     font-size: 14px;
     border: 1px solid #D7DDE2;
 }
@@ -1374,7 +1376,7 @@ padding-top: 15.2%;
     padding-right: 35px;
     resize: none;
     color: #959595;
-    font-family: "TitilliumWeb-Regular",sans-serif;
+    font-family: "SourceSansPro-Regular",sans-serif;
     font-size: 14px;
     border: 1px solid #D7DDE2;
 }
@@ -1419,7 +1421,7 @@ padding-top: 15.2%;
     z-index: 9;
     cursor: pointer;
     -webkit-transition: all 0.25s linear;
-    font-family: "TitilliumWeb-Regular",sans-serif;
+    font-family: "SourceSansPro-Regular",sans-serif;
 }
 
 .input-campaign ul li:hover label{
@@ -1494,7 +1496,7 @@ form.verifikasi p{
   text-align: center;
   line-height: 24px;
   color: #959595;
-  font-family: "TitilliumWeb-Regular",sans-serif;
+  font-family: "SourceSansPro-Regular",sans-serif;
       position: relative;
     bottom: 180px;
 
@@ -1516,7 +1518,7 @@ form.verifikasi button{
     padding: 20px 10px 20px 10px;
     width: 100%;
     outline: none;
-    font-family: "TitilliumWeb-Regular",sans-serif;
+    font-family: "SourceSansPro-Regular",sans-serif;
     font-size: 14px;
     position: absolute;
     top: 330px;
@@ -1703,7 +1705,7 @@ form.verifikasi button{
       right: 0;
       margin-bottom: -50px;
       background-color: #317adc;
-      font-family: "TitilliumWeb-Regular",sans-serif;
+      font-family: "SourceSansPro-Regular",sans-serif;
       color: #FFF;
       padding: 10px;
       text-align: center;
@@ -1767,7 +1769,7 @@ form.verifikasi button{
     padding: 7px 7px 7px 7px;
     color: #317adc;
     font-size: 14px;
-    font-family: "TitilliumWeb-Regular",sans-serif;
+    font-family: "SourceSansPro-Regular",sans-serif;
 
 }
 
@@ -2001,6 +2003,11 @@ form.verifikasi button{
 	.penghubung-langkah{
       top: 250px;
       width: 670px;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1024px){
+  .campaign-action{
+    margin-left: -10px;
   }
 }
 @media (min-width: 1200px){
