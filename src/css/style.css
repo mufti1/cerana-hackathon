@@ -1,214 +1,225 @@
 @font-face {
-    font-family: "SourceSansPro-Regular";
-    src: url(../fonts/SourceSansPro-Regular.otf);
-    font-weight: 200;
+  font-family: "SourceSansPro-Regular";
+  src: url(../fonts/SourceSansPro-Regular.otf);
+  font-weight: 200;
 }
 @font-face {
-    font-family: "Exo-Italic";
-    src: url(../fonts/Exo-Italic.otf);
-    font-weight: 200;
+  font-family: "Exo-Italic";
+  src: url(../fonts/Exo-Italic.otf);
+  font-weight: 200;
 }
 @font-face {
-    font-family: "SourceSansPro-Regular";
-    src: url(../fonts/SourceSansPro-Regular.ttf);
-    font-weight: 200;
+  font-family: "SourceSansPro-Regular";
+  src: url(../fonts/SourceSansPro-Regular.ttf);
+  font-weight: 200;
 }
 
 h1,h2,h3,h4,h5,h6,p{margin: 0;padding: 0;}
 
 
- 
+
 /*NAVBAR*/
 .stick-nav{
-    height: 20px;
-    width: 100%;
-    background-color: #466a9a;
+  height: 20px;
+  width: 100%;
+  background-color: #466a9a;
 }
 
 .navbar{
-    min-height: 70px;
-    margin-bottom: 0;
+  min-height: 70px;
+  margin-bottom: 0;
 }
 
 .navbar-toggle{
-    margin-top: 20px;
+  margin-top: 20px;
 }
 .navbar-brand{
-    padding: 5px 15px;
+  padding: 5px 15px;
 }
 
 .navbar-default {
-    background-color: #FFFFFF;
-    border: none;
-    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+  background-color: #FFFFFF;
+  border: none;
+  box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    color: #fff;
-    background-color: #466a9a;
+  color: #fff;
+  background-color: #466a9a;
 }
 .navbar-default .navbar-nav>li>a {
-    color: #898989;
-    font-family: 'SourceSansPro-Regular';
+  color: #898989;
+  font-family: 'SourceSansPro-Regular';
 }
 .navbar-default .navbar-nav>li>a:hover {
-    color: #23354D;
+  color: #23354D;
 }
 .nav>li>a{
-    position: relative;
-    display: block;
-    padding: 15px 30px;
+  position: relative;
+  display: block;
+  padding: 15px 30px;
 }
 
 .nav > .login-register > li > a {
-    position: relative;
-    display: block;
-    padding: 15px 30px;
+  position: relative;
+  display: block;
+  padding: 15px 30px;
 }
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #466A9A;
+  background-color: #466A9A;
 }
 
 .navbar-default .navbar-toggle {
-    border-color: #5f799a;
+  border-color: #5f799a;
 }
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-    background-color: #E1E7EF;
+  background-color: #E1E7EF;
 }
 
 @media (min-width: 768px){
-.navbar-nav>li>a {
+  .navbar-nav>li>a {
     padding-top: 25px;
     padding-bottom: 25px;
-    }
-    .nav > .login-register > li > a {
+  }
+  .nav > .login-register > li > a {
     position: relative;
     display: block;
     padding: 8px 20px;
-    }   
+  }   
 }
 
 .login-register{
-    float: left;
+  float: left;
 }
 .login-register > li{float: left;padding-top: 17px;}
 .login-register > li > a{text-decoration: none;color: #898989;}
 .tombol-menu{
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    border:1px solid #466a9a;
-    border-radius: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border:1px solid #466a9a;
+  border-radius: 30px;
 }
 
 .header{
-    width: 100%;
-    height: 587px;
-    overflow: hidden;
-    color: #fff;
+  width: 100%;
+  height: 587px;
+  overflow: hidden;
+  color: #fff;
 }
 .bg-header{
-    content: " ";
-    width: 1366px;
-    height: 946px;
-    background-color: #5f799a;
-    display: block;
-    position: relative;
-    transform: rotate(50deg);
-    right: 350px;
-    bottom: 300px;
-    z-index: -1;
-    float: left;
+  content: " ";
+  width: 1366px;
+  height: 946px;
+  background-color: #5f799a;
+  display: block;
+  position: relative;
+  transform: rotate(50deg);
+  right: 350px;
+  bottom: 300px;
+  z-index: -1;
+  float: left;
 }
 .gambar-header{
-    float: right;
-    position: relative;
-    bottom: 1350px;
-    right: 70px;
-    z-index: -2;
+  float: right;
+  position: relative;
+  bottom: 1350px;
+  right: 70px;
+  z-index: -2;
 }
 .text-header{
-    position: relative;
+  position: relative;
 }
 .text-header h1{
-    font-family: 'SourceSansPro-Regular';
-    letter-spacing: 3.6px;
-    font-size: 36px;
+  font-family: 'SourceSansPro-Regular';
+  letter-spacing: 3.6px;
+  font-size: 36px;
 }
 .text-header p{
-    font-family: 'SourceSansPro-Regular';
-    font-size: 16px;
-    line-height: 24px;
-    position: relative;
-    margin-top: 36px;
+  font-family: 'SourceSansPro-Regular';
+  font-size: 16px;
+  line-height: 24px;
+  position: relative;
+  margin-top: 36px;
 }
 .text-header p.italic{
-    font-family: 'Exo-Italic';
+  font-family: 'Exo-Italic';
 }
 
+.text-header a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-family: 'SourceSansPro-Regular';
+  padding: 20px 40px;
+  border-radius: 30px;
+  border:1px solid #fff;
+  position: relative;
+  top: 60px;
+}
 
 
 /*------ BAGIAN CARD */
 
 .card{
-    width: 100%;
-    min-height: 515px;
-    border-radius: 10px;
+  width: 100%;
+  min-height: 515px;
+  border-radius: 10px;
   background-color: #ffffff;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
 }
 .image-card{
-    background-color: #898989;
-    min-height: 197px;
-    max-height: 197px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+  background-color: #898989;
+  min-height: 197px;
+  max-height: 197px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .content-card{
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 30px;
-    max-height: 157px;
-    overflow: hidden;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 30px;
+  max-height: 157px;
+  overflow: hidden;
 }
 .content-card h4 > a{
-    font-family: 'SourceSansPro-Regular';
-    font-size: 18px;
-    line-height: 24px;
-    color: #23354d;
-    text-decoration: none;
+  font-family: 'SourceSansPro-Regular';
+  font-size: 18px;
+  line-height: 24px;
+  color: #23354d;
+  text-decoration: none;
 }
 .content-card p > a{
-    font-family: 'SourceSansPro-Regular';
-    font-size: 14px;
-    line-height: 24px;
-    text-decoration: none;
-    color: #959595;
+  font-family: 'SourceSansPro-Regular';
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #959595;
 }
 .card-footer{
-    position: absolute;
-    bottom: 0;
+  position: absolute;
+  bottom: 0;
 }
 .info-card{
-    float: left;
-    margin-top: 60px;
-    padding-right: 25px;
-    padding-left: 25px;
+  float: left;
+  margin-top: 60px;
+  padding-right: 25px;
+  padding-left: 25px;
 }
 .kanan{float: right;}
 .info-card p{
-    font-family: "SourceSansPro-Regular";
-    font-size: 10px;
-    color: #898989
+  font-family: "SourceSansPro-Regular";
+  font-size: 10px;
+  color: #898989
 }
 
 /* Progress bar */
 .progress-place{
-    padding-left: 25px;
-    padding-right: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 .progress {
   width: 100%;
@@ -330,3 +341,20 @@ h1,h2,h3,h4,h5,h6,p{margin: 0;padding: 0;}
   border: 2px dashed #696969; margin: 150px 300px; width: 700px; height: 300px; background-color: white;
 }
 /*transfer*/
+
+.tata-cara{
+  padding: 60px;
+}
+.tata-cara h3,.tata-cara h5{
+  font-family: "Exo-Regular";
+  color:#23354D;
+  padding: 30px 0px;
+}
+
+.tata-cara p{
+  font-family: "SourceSansPro-Regular";
+  color: #898989;
+  line-height: 24px;
+  font-size: 16px;
+  margin-top: 30px;
+}
