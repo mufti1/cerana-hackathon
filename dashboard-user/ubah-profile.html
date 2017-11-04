@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cerana</title>
+	<link rel="stylesheet" type="text/css" href="../lib/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../lib/css/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="../src/css/style.css">
+	<link rel="stylesheet" type="text/css" href="../src/css/style-dashboard-user.css">
+</head>
+<body>
+	<div class="dashboard">
+
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">
+						<img src="../src/img/logo-putih.png"/>
+					</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-left">
+						<li>
+							<button type="button" class="btn-toggle-sidebar" data-toggle="offcanvas">
+								<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+							</button>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						
+						<li><a href="buat-card.html" class="nav-header-item"><span class="glyphicon glyphicon-pencil nav-header-item"></span> Buat Card</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-envelope nav-header-item"></span></a></li>
+						<li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+					</ul>
+
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+
+		<div id="wrapper" class="row toggled">
+			<!-- Sidebar -->
+			<div class="col-md-2" id="sidebar-wrapper">
+				<nav class="sidebar" role="navigation">
+					<ul class="nav sidebar-nav">
+						<li class="sidebar-brand">
+							<div class="text-center">
+								<img src="../src/img/img1.jpg" class="rounded-circle sidebar-item-header">
+								<p class="sidebar-item-header">Muhammad Arinal</p>
+								<p class="sidebar-item-header">Saldo : Rp 1.000.000</p>
+							</div>
+						</li>
+						<li>
+							<a href="pendapatan.html" class="sidebar-item">Pendapatan</a>
+						</li>
+						<li>
+							<a href="cairkan.html" class="sidebar-item">Cairkan</a>
+						</li>
+						<li>
+							<a href="pesan.html" class="sidebar-item d-flex justify-content-between align-items-center">
+								Pesan
+								<span class="badge">2</span>
+							</a>
+						</li>
+						<li>
+							<a href="ubah-profile.html" class="sidebar-item active">Akun</a>
+						</li>
+						<li>
+							<a href="buat-card.html" class="sidebar-item">Buat Card</a>
+						</li>
+						<li>
+							<a href="#" class="sidebar-item-danger">Logout</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<!-- sidebar-wrapper -->
+
+			<!-- Page Content -->
+			
+			<div class="col-md-10">
+				<div class="dashboard-content">
+					<!-- Isi Konten -->
+					<div class="profile">
+						<h1>Pengaturan Akun</h1>
+						<div class="container">
+							<div class="col-md-10">
+								<form class="form-horizontal">
+									<div class="form-group">
+										<label class="control-label col-sm-2" for="email">Username:</label>
+										<div class="col-sm-10">
+											<input type="email" class="form-control" id="user" value="arinal" disabled>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="control-label col-sm-2" for="email">Foto Profil:</label>
+										<div class="col-sm-10">
+											<input type="file" class="form-control" id="foto" value="arinal" disabled>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="control-label col-sm-2" for="pwd">Password:</label>
+										<div class="col-sm-10">          
+											<input type="password" class="form-control" id="pwd" value="arinal" disabled>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="control-label col-sm-2" for="email">Email:</label>
+										<div class="col-sm-10">
+											<input type="email" class="form-control" id="email" value="rinal@email.com" disabled>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="control-label col-sm-2" for="email">No Telp:</label>
+										<div class="col-sm-10">
+											<input type="email" class="form-control" id="notelp" value="08571588721" disabled>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="control-label col-sm-2" for="email">No Rekening:</label>
+										<div class="col-sm-10">
+											<input type="email" class="form-control" id="norek" value="00917218829187" disabled>
+										</div>
+									</div>
+									<div class="form-group">        
+										<div class="col-sm-offset-2 col-sm-10">
+											<div class="checkbox">
+												<label><input type="checkbox" name="remember" id="rem" onchange="nyala();" value="0"> Nyalakan Perubahan?</label>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">        
+										<div class="col-sm-offset-2 col-sm-10">
+											<button type="submit" class="btn btn-primary" id="ubah" disabled>Ubah</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="../lib/js/jquery.js"></script>
+	<script type="text/javascript" src="../lib/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../lib/js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="../lib/js/canvasjs.min.js"></script>
+	<script type="text/javascript" src="../src/js/costume.js"></script>
+	<script>
+		function nyala(){
+			if(document.getElementById("rem").value =="0"){
+				document.getElementById("rem").value ="1";
+				document.getElementById("email").disabled= false;
+				document.getElementById("user").disabled= false;
+				document.getElementById("pwd").disabled= false;
+				document.getElementById("foto").disabled= false;
+				document.getElementById("notelp").disabled= false;
+				document.getElementById("norek").disabled= false;
+				document.getElementById("ubah").disabled=false;
+			}
+			else if(document.getElementById("rem").value =="1"){
+				document.getElementById("rem").value ="0";
+				document.getElementById("email").disabled= true;
+				document.getElementById("user").disabled= true;
+				document.getElementById("pwd").disabled= true;
+				document.getElementById("foto").disabled= true;
+				document.getElementById("notelp").disabled= true;
+				document.getElementById("norek").disabled=true;
+				document.getElementById("ubah").disabled=true;
+			}
+		}
+	</script>
+</body>
+</html>

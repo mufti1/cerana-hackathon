@@ -1,0 +1,284 @@
+@font-face {
+    font-family: "Exo-Regular";
+    src: url(../fonts/Exo-Regular.otf);
+    font-weight: 200;
+}
+@font-face {
+    font-family: "Exo-Italic";
+    src: url(../fonts/Exo-Italic.otf);
+    font-weight: 200;
+}
+@font-face {
+    font-family: "SourceSansPro-Regular";
+    src: url(../fonts/SourceSansPro-Regular.ttf);
+    font-weight: 200;
+}
+
+h1,h2,h3,h4,h5,h6,p{margin: 0;padding: 0;}
+
+
+ 
+/*NAVBAR*/
+.stick-nav{
+    height: 20px;
+    width: 100%;
+    background-color: #466a9a;
+}
+
+.navbar{
+    min-height: 70px;
+    margin-bottom: 0;
+}
+
+.navbar-toggle{
+    margin-top: 20px;
+}
+.navbar-brand{
+    padding: 5px 15px;
+}
+
+.navbar-default {
+    background-color: #FFFFFF;
+    border: none;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #466a9a;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #898989;
+    font-family: 'SourceSansPro-Regular';
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: #23354D;
+}
+.nav>li>a{
+    position: relative;
+    display: block;
+    padding: 15px 30px;
+}
+
+.nav > .login-register > li > a {
+    position: relative;
+    display: block;
+    padding: 15px 30px;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #466A9A;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #5f799a;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #E1E7EF;
+}
+
+@media (min-width: 768px){
+.navbar-nav>li>a {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    }
+    .nav > .login-register > li > a {
+    position: relative;
+    display: block;
+    padding: 8px 20px;
+    }   
+}
+
+.login-register{
+    float: left;
+}
+.login-register > li{float: left;padding-top: 17px;}
+.login-register > li > a{text-decoration: none;color: #898989;}
+.tombol-menu{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border:1px solid #466a9a;
+    border-radius: 30px;
+}
+
+.header{
+    width: 100%;
+    height: 587px;
+    overflow: hidden;
+    color: #fff;
+}
+.bg-header{
+    content: " ";
+    width: 1366px;
+    height: 946px;
+    background-color: #5f799a;
+    display: block;
+    position: relative;
+    transform: rotate(50deg);
+    right: 350px;
+    bottom: 300px;
+    z-index: -1;
+    float: left;
+}
+.gambar-header{
+    float: right;
+    position: relative;
+    bottom: 1350px;
+    right: 70px;
+}
+.text-header{
+    position: relative;
+}
+.text-header h1{
+    font-family: 'Exo-Regular';
+    letter-spacing: 3.6px;
+    font-size: 36px;
+}
+.text-header p{
+    font-family: 'SourceSansPro-Regular';
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+    margin-top: 36px;
+}
+.text-header p.italic{
+    font-family: 'Exo-Italic';
+}
+
+
+
+/*--------- TERBARU */
+#terbaru{
+    width: 100%;
+    height: 700px;
+    background-color:#f7f7f7; 
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.lihat-semua{
+    float: right;
+}
+a.lihat-semua{
+    text-decoration: none;
+    color: #959595;
+    padding: 18px 40px 18px 50px;
+    border-radius: 39px;
+    border: 1px solid #959595;
+    font-size: 14px;
+    font-family: "SourceSansPro-Regular",sans-serif;
+    position: relative;
+    margin: -85px 0px 0px 0px;
+        webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    -ms-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+a.lihat-semua:hover{
+  background-color: #e5e5e5;
+    webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    -ms-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;}
+/*Marketplace*/
+.card-market{
+  margin-top: 30px;
+}
+.second-navbar{
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+.card-bungkus{
+  height: 460px;
+  background-color: white;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.img-card > img{
+  height: 200px;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.filter{
+  width: 40%;
+  float: right;
+}
+.card-content > .card-row h1{
+  font-family: "Exo-Regular";
+  font-size: 24px;
+
+}
+.card-row{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.card-content > .card-row a{
+  font-family: "SourceSansPro-Regular";
+  font-size: 14px;
+  color: #959595;
+
+}
+.harga{
+  margin-top: 20px;
+  font-family: "SourceSansPro-Regular";
+  font-size: 16px;
+  color: #466a9a;
+}
+.beli-section {
+  margin-top: 65px;
+}
+.beli-section > div > span {
+  color: #FBBC05;
+}
+.beli-section > div > button{
+  margin-top: -10px;
+  float: right;
+}
+.pagination {
+  margin-left: 90px;
+}
+
+/*Marketplace*/
+
+/*detail martekplace*/
+.banner-detail{
+  background: url("../img/apart.jpg");
+  background-size: 100%;
+  width: 100%;
+  display: block;
+  height: 450px;
+  background-repeat: no-repeat;
+  background-color: rgba(0,0,0,0.5);
+  background-blend-mode: multiply;
+
+}
+.banner-content > h1{
+  color: white;
+  margin-top: 150px;
+  font-family: "SourceSansPro-Regular";
+  font-size: 32px;
+}
+.banner-content > h3{
+  color: white;
+  font-family: "SourceSansPro-Regular";
+  font-size: 20px;
+}
+/*detai marketplace*/
+.detail-harga{
+  margin-top: 30px;
+}
+#map{
+  height: 400px;
+}
+.color-blue{
+  color: #466a9a;
+}
+/*transfer*/
+.box-transfer{
+  border: 2px dashed #696969; margin: 150px 300px; width: 700px; height: 300px; background-color: white;
+}
+/*transfer*/
