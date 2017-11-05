@@ -1,4 +1,4 @@
-+@font-face {
+@font-face {
   font-family: "Exo-Regular";
   src: url(../fonts/Exo-Regular.otf);
   font-weight: 200;
@@ -9,26 +9,19 @@
   font-weight: 200;
 }
 
-.row{
-  margin-right: 0;
-}
-/*----------------*/
-/* Dashboard User */
-/*----------------*/
-html, body, .dashboard{
-  /*overflow: hidden;*/
-  height: 100%
-}
+/*-----------*/
+/* Dashboard */
+/*-----------*/
 
 .dashboard-content{
-  margin-top: 30px;
+	margin-top: 30px;
   margin-left: 30px;
 }
 
 .rounded-circle{
-  border-radius: 50%;
-  height: 100px;
-  width: 100px;
+	border-radius: 50%;
+	height: 100px;
+	width: 100px;
 }
 
 #wrapper {
@@ -38,10 +31,7 @@ html, body, .dashboard{
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
-}
-
-#sidebar-wrapper{
-  height: 100%;
+  margin-right: 0;
 }
 
 #sidebar-wrapper.hide{
@@ -77,14 +67,27 @@ html, body, .dashboard{
   height: 50px;
 }
 
+.navbar-default .navbar-toggle .icon-bar{
+  background-color: white;
+}
+
+.navbar-default .navbar-toggle{
+  border-color: white;
+}
+
 .navbar-brand img{
   height: 40px;
   margin-top: 5px;
   margin-left: 30px;
+  margin-right: 47px;
 }
 
 .navbar-brand{
   padding: 0;
+}
+
+.navbar-nav li:hover{
+  background-color: #466a9a;
 }
 
 .nav-header-item{
@@ -179,6 +182,10 @@ p.sidebar-item-header{
   padding: 15px 15px 15px 30px;
 }
 
+.sidebar-nav li a:hover, .sidebar-nav li a:focus{
+  color: #555;
+}
+
 .sidebar-nav > .sidebar-brand {
   font-family: 'Exo-Regular';
   font-size: 20px;
@@ -189,120 +196,13 @@ p.sidebar-item-header{
 }
 
 .badge{
-  background-color: white;
-  color: #555;
+  background-color: #d9edf7;
+  color: #31708f;
   float: right;
 }
 
-
-/*-------*/
-/* Pesan */
-/*-------*/
-.nav-stacked li{
-  border-bottom: 1px solid #eee;  
-}
-
-.nav-stacked li:last-child{
-  border: none;
-}
-
-.nav-pills > li > a{
-  border-radius: 0;
-}
-
-.panel-body{
-  padding: 0;
-}
-.pesan{
-
-}
-
-.pesan-header{
-  height: 50px;
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-.pesan-header span:first-child{
-  font-size: 26px;
-  margin-right: 10px;
-  /*font-weight: bold;*/
-}
-
-.pesan-header span:last-child{
-  color: #555;
-}
-
-.pesan-buat {
-  width: 100%;
-  margin-bottom: 30px;
-}
-/*-------*/
-/* Pesan */
-/*-------*/
-
-tr.unread{
-  font-weight: bold;
-}
-
-tr.read{
-  background-color: #f5f5f5;
-}
-
-tr.read a{
-  font-weight: normal;
-}
-.nav-stacked li{
-  border-bottom: 1px solid #eee;
-}
-
-.nav-stacked li:last-child{
-  border: none;
-}
-
-.nav-pills > li > a{
-  border-radius: 0;
-  color: black;
-  display: unset;
-}
-
-.panel-body{
-  padding: 0;
-}
-
-.pesan-header{
-  height: 50px;
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-.pesan-header span:first-child{
-  font-size: 26px;
-  margin-right: 10px;
-  /*font-weight: bold;*/
-}
-
-.pesan-header span:last-child{
-  color: #555;
-}
-
-.pesan-halaman{
+.badge-warn{
+  background-color: #f2dede;
+  color: #a94442;
   float: right;
-}
-
-/*------------*/
-/* Pendapatan */
-/*------------*/
-
-.konten-pendapatan{
-  margin-top: 50px;
-}
-
-.filter{
-  width: 200px;
-  text-align: left;
-}
-
-.open > .dropdown-menu{
-  width: 200px;
 }
