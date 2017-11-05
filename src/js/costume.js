@@ -40,11 +40,11 @@ window.onload = function () {
 			}]
 		});
 		chart.render();
-	}
+	};
 	
-
-	var trigger = $('.hamburger'),
+	var trigger = $('.btn-toggle-sidebar'),
 	sidebar = $('#sidebar-wrapper'),
+	konten = $('#konten'),
 	isClosed = false;
 	trigger.click(function () {
 		hamburger_cross();      
@@ -53,23 +53,60 @@ window.onload = function () {
 	function hamburger_cross() {
 		if (isClosed == true) {          
 			sidebar.removeClass("col-md-2");
-			// sidebar.addClass("hide");
+			konten.removeClass("col-md-10");
+			konten.addClass("col-md-12");
 			isClosed = false;
 		} else {   
 			sidebar.addClass("col-md-2");
-			// sidebar.removeClass('hide');
+			konten.addClass("col-md-10");
+			konten.removeClass("col-md-12");
 			isClosed = true;
-		}
-		if ($('#spline-chart').length > 0) {
-
-		}
+		};
 		if ($('#spline-chart').length > 0) {
 			chart.render();
-		}
-
-	}
+		};
+	};
 
 	$('[data-toggle="offcanvas"]').click(function () {
 		$('#sidebar-wrapper').toggleClass('hide');
+	});    
+	
+	$('#sidebar-wrapper').height($(document).height() - $('.navbar').height());
+};
+
+jQuery(document).ready(function($) {
+	
+	row = $('.clickable-table');
+    for (i = 0; i < row.length; i++){
+    	col = $($('.clickable-table')[i]).children('td').slice(1);
+    	$(col).addClass('clickable-row');
+    	$(col).data('href', $($(row)[i]).data('href'));
+    }
+    $(row).removeClass('clickable-table');
+
+    $(".clickable-row").click(function() {
+    	// console.log($(this).data("href"));
+		window.location = $(this).data("href");
 	});
-}
+
+    checkBox = $('td input');
+	checked = false;
+	$($(checkBox)).change(function () {
+		if ($($(checkBox)).is(':checked')) {
+			$('.glyphicon-pencil').parent('a.btn').attr("disabled", true);
+		} else {
+			$('.glyphicon-pencil').parent('a.btn').attr("disabled", false);
+		};
+	});
+	
+	$('.glyphicon-check').parent().click(function() {
+		if (checked){
+			$('td input').attr("checked", false);
+			$('.glyphicon-pencil').parent('a.btn').attr("disabled", true);
+		}else {
+			$('td input').attr("checked", true);	
+			$('.glyphicon-pencil').parent('a.btn').attr("disabled", false);
+		};
+		checked = !checked;
+	});
+});

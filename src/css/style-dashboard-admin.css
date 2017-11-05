@@ -1,6 +1,6 @@
-/*-------*/
-/* Pesan */
-/*-------*/
+/*------------*/
+/* Permintaan */
+/*------------*/
 
 tr.unread{
   font-weight: bold;
@@ -30,43 +30,34 @@ tr.read a{
 .panel-body{
   padding: 0;
 }
-.pesan{
 
-}
-
-.pesan-header{
+.permintaan-header{
   height: 50px;
   width: 100%;
   margin-bottom: 20px;
 }
 
-.pesan-header span:first-child{
+.permintaan-header span:first-child{
   font-size: 26px;
   margin-right: 10px;
   /*font-weight: bold;*/
 }
 
-.pesan-header span:last-child{
+.permintaan-header span:last-child{
   color: #555;
 }
 
-.pesan-halaman{
-  float: right;
+.permintaan-halaman{
+  float: right !important;
 }
 
-/*------------*/
-/* Pendapatan */
-/*------------*/
-
-.konten-pendapatan{
-  margin-top: 50px;
+.breadcrumb{
+  margin-bottom: 0;
+}
+.clickable-row{
+  cursor: pointer;
 }
 
-.filter{
-  width: 200px;
-  text-align: left;
-}
-
-.open > .dropdown-menu{
-  width: 200px;
+.table.detail-user{
+  
 }

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cerana</title>
+	<link rel="stylesheet" type="text/css" href="../lib/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../lib/css/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="../src/css/style.css">
+	<link rel="stylesheet" type="text/css" href="../src/css/style-dashboard.css">
+	<link rel="stylesheet" type="text/css" href="../src/css/style-dashboard-admin.css">
+</head>
+<body>
+	<div class="dashboard">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="../index.html">
+						<img src="../src/img/logo-putih.png"/>
+					</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-left">
+						<li>
+							<button type="button" class="btn-toggle-sidebar" data-toggle="offcanvas">
+								<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+							</button>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						
+						<li><a href="#" class="nav-header-item"><span class="glyphicon glyphicon-pencil nav-header-item"></span> Buat Card</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-envelope nav-header-item"></span></a></li>
+						<li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+					</ul>
+
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+
+		<div id="wrapper" class="row">
+			<!-- Sidebar -->
+			<div class="col-md-2" id="sidebar-wrapper">
+				<nav class="sidebar" role="navigation">
+					<ul class="nav sidebar-nav">
+						<li class="sidebar-brand">
+							<div class="text-center">
+								<img src="../src/img/img1.jpg" class="rounded-circle sidebar-item-header">
+								<p class="sidebar-item-header">Muhammad Arinal</p>
+								<p class="sidebar-item-header">Admin Website</p>
+							</div>
+						</li>
+						<li>
+							<a href="daftar-permintaan.html" class="sidebar-item d-flex justify-content-between align-items-center">
+								Daftar Permintaan
+								<span class="badge">99+</span>
+							</a>
+						</li>
+						<li>
+							<a href="marketplace.html" class="sidebar-item">Marketplace</a>
+						</li>
+						<li>
+							<a href="daftar-investasi.html" class="sidebar-item">Daftar Investasi</a>
+						</li>
+						<li>
+							<a href="daftar-user.html" class="sidebar-item active">Daftar User</a>
+						</li>
+						<li>
+							<a href="daftar-report.html" class="sidebar-item d-flex justify-content-between align-items-center">
+								Daftar Report
+								<span class="badge badge-warn">5</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="sidebar-item-danger">Logout</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<!-- Page Content -->
+			<div class="col-md-10" id="konten">
+				
+				<div class="dashboard-content">
+					<!-- Isi Konten -->
+					<div class="permintaan">
+						<div class="permintaan-header">
+							<span>User</span>
+							<span>3.817 User</span>
+						</div>
+
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h1 class="panel-title">
+									<ul class="breadcrumb">
+										<li class="active">User</li>
+									</ul>
+								</h1>
+							</div>
+							<div class="panel-body">
+								<table class="table">
+									<tr>
+										<td colspan="5">
+											<a href="#" type="button" class="btn btn-default">
+												<span class="glyphicon glyphicon-check"></span>
+											</a>
+											<div class="btn-group" role="group">
+												<a href="#" class="btn btn-default">
+													<span class="glyphicon glyphicon-plus"></span>
+												</a>
+												<a href="#" class="btn btn-default">
+													<span class="glyphicon glyphicon-pencil"></span>
+												</a>
+												<a href="#" class="btn btn-default">
+													<span class="glyphicon glyphicon-trash"></span>
+												</a>
+												<a href="#" class="btn btn-default">
+													<span class="glyphicon glyphicon-refresh"></span>
+												</a>
+											</div>
+											<div class="permintaan-halaman">
+												1-15/3817
+												<div class="btn-group" role="group">
+													<a href="#" class="btn btn-default disabled">
+														<span class="glyphicon glyphicon-chevron-left"></span>
+													</a>
+													<a href="#" class="btn btn-default disabled">
+														<span class="glyphicon glyphicon-chevron-right"></span>
+													</a>
+												</div>
+											</div>
+										</td>
+
+									</div>
+								</tr>
+								<tr class="clickable-table" data-href="detail/user.html">
+									<td>
+										<input type="checkbox">
+									</td>
+									<td>
+										001
+									</td>
+									<td>
+										mufti1
+									</td>
+									<td>
+										Mufti Ismi
+									</td>
+									<td>
+										Rp 3.000.000
+									</td>
+								</tr>
+								<tr class="clickable-table" data-href="#">
+									<td>
+										<input type="checkbox">
+									</td>
+									<td>
+										002
+									</td>
+									<td>
+										ade1256
+									</td>
+									<td>
+										Ade Prasetyo
+									</td>
+									<td>
+										Rp 5.000.000
+									</td>
+								</tr>
+								<tr class="clickable-table" data-href="#">
+									<td>
+										<input type="checkbox">
+									</td>
+									<td>
+										003
+									</td>
+									<td>
+										peeko
+									</td>
+									<td>
+										Alfikri Djati
+									</td>
+									<td>
+										Rp 2.000.000
+									</td>
+								</tr>
+								<tr class="clickable-table" data-href="#">
+									<td>
+										<input type="checkbox">
+									</td>
+									<td>
+										004
+									</td>
+									<td>
+										firmanrpl12
+									</td>
+									<td>
+										Firmansyah
+									</td>
+									<td>
+										Rp 4.000.000
+									</td>
+								</tr>
+								<tr class="clickable-table" data-href="#">
+									<td>
+										<input type="checkbox">
+									</td>
+									<td>
+										005
+									</td>
+									<td>
+										dhejhon
+									</td>
+									<td>
+										Adhe Kurniawan
+									</td>
+									<td>
+										Rp 1.000.000
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="../lib/js/jquery.js"></script>
+	<script type="text/javascript" src="../lib/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../lib/js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="../src/js/costume.js"></script>
+</body>
+</html>
