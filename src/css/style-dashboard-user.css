@@ -15,10 +15,6 @@
 /*----------------*/
 /* Dashboard User */
 /*----------------*/
-html, body, .dashboard{
-  /*overflow: hidden;*/
-  height: 100%
-}
 
 .dashboard-content{
   margin-top: 30px;
